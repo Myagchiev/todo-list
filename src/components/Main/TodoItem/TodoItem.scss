@@ -1,0 +1,23 @@
+.todo-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &.overdue {
+    background-color: #ffe6e6;
+    border-left-color: #dc3545;
+  }
+
+  &.urgent {
+    background-color: #fff3e6;
+    border-left-color: #ffc107;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+}

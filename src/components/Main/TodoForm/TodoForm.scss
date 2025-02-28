@@ -1,0 +1,93 @@
+.todo-form {
+  &__open-btn {
+    padding: 8px 16px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+
+    &:hover {
+      background-color: #218838;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+  }
+
+  &__textarea {
+    width: 100%;
+    min-height: 40px;
+    max-height: 60px;
+    resize: vertical;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    background: #fff;
+  }
+
+  &__controls-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__priority-select {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    background: #fff;
+    transition: border-color 0.2s;
+    color: #555;
+
+    &:hover,
+    &:focus {
+      border-color: #28a745;
+      outline: none;
+    }
+
+    option[disabled] {
+      color: #999;
+    }
+  }
+
+  &__date-picker {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  &__calendar-icon {
+    position: absolute;
+    left: 8px;
+    color: #666;
+    font-size: 14px;
+  }
+
+  &__date-input {
+    width: 100%;
+    padding: 6px 8px 6px 28px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    background: #fff;
+  }
+}

@@ -1,0 +1,35 @@
+.controls {
+    display: flex;
+    gap: 20px;
+  
+    &__sort,
+    &__filter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  
+    &__sort-label,
+    &__filter-label {
+      font-weight: 500;
+      color: #555;
+      font-size: 14px;
+    }
+  
+    &__sort-select,
+    &__filter-select {
+      padding: 6px 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background-color: #fff;
+      font-size: 13px;
+      cursor: pointer;
+      transition: border-color 0.2s;
+  
+      &:hover,
+      &:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+    }
+  }

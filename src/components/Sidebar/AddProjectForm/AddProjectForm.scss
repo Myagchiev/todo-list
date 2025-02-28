@@ -1,0 +1,33 @@
+.add-project-form {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+  
+    &__input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border-color 0.2s;
+  
+      &:focus {
+        border-color: #28a745;
+        outline: none;
+      }
+    }
+  
+    &__btn {
+      padding: 10px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+  
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
