@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ProjectManager from './logic/projectManager/ProjectManager';
+import ProjectManager from './logic/projectManager/projectManager';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar/Sidebar';
 import Main from './components/Main/Main/Main';
