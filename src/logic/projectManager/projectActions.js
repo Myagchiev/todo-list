@@ -1,4 +1,4 @@
-import createTodo from '../todoFactory/TodoFactory';
+import createTodo from '../todoFactory/todoFactory';
 
 export function addProject(projects, name) {
   projects.push({
