@@ -15,6 +15,11 @@
     }
   }
 
+  &__field {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
   &__input {
     width: 100%;
     padding: 8px;
@@ -23,6 +28,10 @@
     border-radius: 6px;
     font-size: 14px;
     background: #fff;
+
+    &--error {
+      border-color: #dc3545;
+    }
   }
 
   &__textarea {
@@ -89,6 +98,10 @@
     border-radius: 4px;
     font-size: 13px;
     background: #fff;
+
+    &--error {
+      border-color: #dc3545;
+    }
   }
 
   &__checklist-form {
@@ -96,7 +109,7 @@
     gap: 5px;
     width: 100%;
     margin-top: 8px;
-    margin-bottom: 10px; /* Добавили отступ снизу */
+    margin-bottom: 10px;
   }
 
   &__checklist-input {
@@ -114,5 +127,13 @@
     border: none;
     color: #28a745;
     cursor: pointer;
+  }
+
+  &__error {
+    color: #dc3545;
+    font-size: 12px;
+    position: absolute;
+    bottom: -8px;
+    left: 8px;
   }
 }

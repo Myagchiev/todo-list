@@ -53,7 +53,7 @@ function Sidebar({ projects, selectedProjectId, setSelectedProjectId, projectMan
         selectedProjectId={selectedProjectId}
         setSelectedProjectId={handleProjectSelect}
         onDelete={handleDeleteProject}
-        onRename={handleRenameProject} // Добавили onRename
+        onRename={handleRenameProject}
       />
       <AddProjectForm
         projectManager={projectManager}

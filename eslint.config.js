@@ -26,7 +26,7 @@ export default [
       'no-unused-vars': [
         'error',
         {
-          varsIgnorePattern: '^[A-Z_]|motion|differenceInDays' // Добавляем motion в исключения
+          varsIgnorePattern: '^[A-Z_]|motion|differenceInDays'
         }
       ],
       'react-refresh/only-export-components': [

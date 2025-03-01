@@ -11,7 +11,6 @@ function AddProjectForm({ projectManager, onUpdate, setSelectedProjectId, select
       projectManager.addProject(newProjectName);
       setNewProjectName('');
       onUpdate();
-      // Если нет выбранного проекта, устанавливаем первый из списка
       if (!selectedProjectId) setSelectedProjectId(projectManager.getProjects()[0].id);
     }
   };

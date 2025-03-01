@@ -5,17 +5,17 @@ import './Modal.scss';
 function Modal({ title, children, onConfirm, onCancel, showCancel = true }) {
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) {
-      onCancel(); // Закрытие только при клике на оверлей
+      onCancel();
     }
   };
 
   const handleConfirmClick = (e) => {
-    e.stopPropagation(); // Предотвращаем всплытие до оверлея
-    if (onConfirm) onConfirm(e); // Вызываем onConfirm
+    e.stopPropagation();
+    if (onConfirm) onConfirm(e);
   };
 
   const handleCancelClick = (e) => {
-    e.stopPropagation(); // Предотвращаем всплытие до оверлея
+    e.stopPropagation();
     if (onCancel) onCancel();
   };
 

@@ -10,6 +10,9 @@ const defaultProject = {
 export default class ProjectManager {
   constructor() {
     this.projects = this.loadFromStorage() || [defaultProject];
+    if (!this.loadFromStorage()) {
+      this.saveToStorage();
+    }
   }
 
   loadFromStorage() {

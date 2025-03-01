@@ -15,6 +15,11 @@
     }
   }
 
+  &__field {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
   &__input {
     width: 100%;
     padding: 8px;
@@ -23,6 +28,10 @@
     border-radius: 6px;
     font-size: 14px;
     background: #fff;
+
+    &--error {
+      border-color: #dc3545;
+    }
   }
 
   &__textarea {
@@ -89,5 +98,17 @@
     border-radius: 4px;
     font-size: 13px;
     background: #fff;
+
+    &--error {
+      border-color: #dc3545;
+    }
+  }
+
+  &__error {
+    color: #dc3545;
+    font-size: 12px;
+    position: absolute;
+    bottom: -8px;
+    left: 8px;
   }
 }

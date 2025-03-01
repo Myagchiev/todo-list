@@ -13,7 +13,7 @@ function Navbar({ onSearch }) {
 
   const clearSearch = () => {
     setSearchQuery('');
-    onSearch(''); // Сбрасываем поиск
+    onSearch('');
   };
 
   return (

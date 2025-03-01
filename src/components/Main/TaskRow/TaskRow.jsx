@@ -30,10 +30,10 @@ function TaskRow({ todo, toggleTodo, deleteTodo, editTodo, projectId, onUpdate, 
       <div className="task-row__actions">
         <EditFields
           todo={todo}
-          editTodo={editTodo} // Передаём editTodo
+          editTodo={editTodo}
           projectId={projectId}
           onUpdate={onUpdate}
-          projectManager={projectManager} // Передаём projectManager
+          projectManager={projectManager}
         />
         <button onClick={handleDelete} className="task-row__delete-btn">
           <FaTrashAlt />

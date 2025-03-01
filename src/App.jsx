@@ -12,7 +12,11 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const updateProjects = () => {
-    setProjects([...projectManager.getProjects()]);
+    const updatedProjects = projectManager.getProjects();
+    setProjects([...updatedProjects]);
+    if (!selectedProjectId || !updatedProjects.some((p) => p.id === selectedProjectId)) {
+      setSelectedProjectId(updatedProjects[0]?.id || null);
+    }
   };
 
   const handleSearch = (query) => {
@@ -37,7 +41,7 @@ function App() {
           setSelectedProjectId={setSelectedProjectId}
           projectManager={projectManager}
           onUpdate={updateProjects}
-          onSearch={handleSearch} // Передаём onSearch в Sidebar
+          onSearch={handleSearch}
         />
         <Main
           projects={projects}

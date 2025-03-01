@@ -1,4 +1,4 @@
-// Сброс стилей
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ body {
 
   &__content {
     flex: 1;
-    padding: 20px 30px; /* Отступы слева и справа */
+    padding: 20px 30px;
     overflow-y: auto;
     background-color: #ffffff;
     display: flex;

@@ -12,7 +12,7 @@ function ProjectList({ projects, selectedProjectId, setSelectedProjectId, onDele
           selectedProjectId={selectedProjectId}
           setSelectedProjectId={setSelectedProjectId}
           onDelete={onDelete}
-          onRename={onRename} // Добавили onRename
+          onRename={onRename}
         />
       ))}
     </ul>

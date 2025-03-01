@@ -64,7 +64,7 @@ function ProjectList({ projects, projectManager, onUpdate, selectedProjectId }) 
           onUpdate();
         }}
         deleteTodo={projectManager.deleteTodo.bind(projectManager)}
-        editTodo={projectManager.editTodo.bind(projectManager)} // Добавили editTodo
+        editTodo={projectManager.editTodo.bind(projectManager)}
         projectId={selectedProject.id}
         onUpdate={onUpdate}
         projectManager={projectManager}
